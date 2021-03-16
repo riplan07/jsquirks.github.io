@@ -138,3 +138,65 @@ section
 {
     position:relative;
 }
+/* ..............................article-section........................ */
+.article-btn
+{
+    margin: 20px 0;
+    background:#f2d46a;
+    color:#333333;
+    font-family: RobotoSlab;
+    font-size: 18px;
+    border:none;
+    padding:6px 12px;
+}
+.article-container
+{
+    display: flex;
+    width: 65%;
+}
+.article-text-content 
+{
+    background: #ffffff;
+    padding:20px 30px;
+    margin-bottom: 4px;
+}
+.article-text-content h2
+{
+    font-family: RobotoSlab;
+    font-size: 24px;
+    color:#e5b400;
+    padding-bottom:15px;
+}
+.article-git-commands
+{
+    display:flex;
+    padding-bottom:20px;
+}
+.article-git-commands span
+{
+    margin-left:8px;
+}
+.article-text-content p
+{
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+    margin-left:8px;
+}
+.article-text-content h6
+{
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+    padding-bottom:26px;
+    line-height: 1.67;
+}
+.article-readmore-btn
+{
+    color:#333333;
+    background:#f2d46a;
+    border:none;
+    font-family: Inter;
+    font-size: 12px;
+    padding:13px 26px;
+}
