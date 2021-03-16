@@ -1,0 +1,17 @@
+.container
+{
+    padding:0 5%;
+}
+.header-container
+{
+    border-bottom:1px solid #f2d46a;
+}
+.header-logo
+{
+    display:flex;
+    justify-content:space-between;
+}
+.header-navbar
+{
+    align-self:center;
+}
