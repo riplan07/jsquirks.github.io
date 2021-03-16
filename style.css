@@ -99,12 +99,17 @@ section
 {
     display:flex;
 }
-.banner-git-commands span
+.banner-icon
 {
+    padding-right:10px;
+}
+.banner-git-commands li
+{
+    display:flex;
+    align-items: center;
     font-family: Inter;
     font-size: 12px;
-    color:#ffffff;
-    margin-left:8px;
+    color:white;
 }
 .banner-calander
 {
@@ -172,10 +177,23 @@ section
     display:flex;
     padding-bottom:20px;
 }
-.article-git-commands span
+.article-icon
 {
-    margin-left:8px;
+    padding-right:10px;
 }
+.article-git-commands li
+{
+    display:flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+}
+.article-calander
+{
+    margin-left:15px;
+}
+
 .article-text-content p
 {
     font-family: Inter;
