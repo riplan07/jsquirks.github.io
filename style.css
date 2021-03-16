@@ -1,3 +1,47 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* .......................reset css..................... */
 .container
 {
     padding:0 5%;
@@ -14,4 +58,83 @@
 .header-navbar
 {
     align-self:center;
+}
+/* .........................section...................... */
+/* ...........................banner......................... */
+section
+{
+    background-color: #f4f4f4; 
+}
+.banner
+{
+    padding-top:20px;
+}
+.banner-section
+{
+    display:flex;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.banner-container
+{
+    position:relative;
+}
+.banner-text-content
+{
+    position:absolute;
+    padding:30px 0 60px 40px;
+    background: rgba(0, 0, 0, 0.44);
+    bottom: 1%;
+    width: 95%;
+    left: 0;
+}
+.banner-text-content h2
+{
+    font-family: RobotoSlab;
+    font-size: 24px;
+    color:#e5b400;
+    padding-bottom:15px;
+}
+.banner-git-commands
+{
+    display:flex;
+}
+.banner-git-commands span
+{
+    font-family: Inter;
+    font-size: 12px;
+    color:#ffffff;
+    margin-left:8px;
+}
+.banner-calander
+{
+    margin-left:15px;
+}
+.banner-container-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner-essential-img
+{
+    position:relative;
+}
+.banner-essential-text
+{
+    position:absolute;
+    background: rgba(0, 0, 0, 0.44);
+    padding: 20px 139px 30px 10px;
+    bottom:4px;
+    left:0;
+}
+.banner-essential-text h2
+{
+    font-family: RobotoSlab;
+    font-size: 24px;
+    color:#e5b400;
+}
+.banner-selector-img
+{
+    position:relative;
 }
