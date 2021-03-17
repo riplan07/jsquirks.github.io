@@ -149,3 +149,82 @@ section
 {
     padding:20px 0;
 }
+/* ..........................latest-article................... */
+.article-item
+{
+    padding-bottom:40px;
+}
+.article-btn
+{
+    margin:20px 0;
+    padding:6px 12px;
+    border:none;
+    background:#f2d46a;
+    color:#333333;
+    font-family: RobotoSlab;
+    font-size: 18px;
+}
+.article-container
+{
+    display: flex;
+    width: 65%;
+}
+.article-text-content 
+{
+    background: #ffffff;
+    padding:20px 30px;
+    margin-bottom: 4px;
+}
+.article-text-content h2
+{
+    font-family: RobotoSlab;
+    font-size: 24px;
+    color:#e5b400;
+    padding-bottom:15px;
+}
+.article-git-commands
+{
+    display:flex;
+    padding-bottom:20px;
+}
+.article-icon
+{
+    padding-right:10px;
+}
+.article-git-commands li
+{
+    display:flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+}
+.article-calander
+{
+    margin-left:15px;
+}
+
+.article-text-content p
+{
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+    margin-left:8px;
+}
+.article-text-content h6
+{
+    font-family: Inter;
+    font-size: 12px;
+    color:#777777;
+    padding-bottom:26px;
+    line-height: 1.67;
+}
+.article-readmore-btn
+{
+    color:#333333;
+    background:#f2d46a;
+    border:none;
+    font-family: Inter;
+    font-size: 12px;
+    padding:13px 26px;
+}
