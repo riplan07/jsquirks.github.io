@@ -152,7 +152,7 @@ section
 /* ..........................latest-article................... */
 .article-item
 {
-    padding-bottom:40px;
+    padding-bottom:15%;
 }
 .article-btn
 {
@@ -227,4 +227,60 @@ section
     font-family: Inter;
     font-size: 12px;
     padding:13px 26px;
+}
+/* ........................section end..................... */
+/* ..........................footer......................... */
+footer
+{
+    border-top: 1px solid #fed33a;
+}
+.footer-container
+{
+    display:flex;
+    justify-content: space-between;
+    width:85%;
+}
+.footer-logo
+{
+    margin-bottom:30px;
+}
+.footer-logo p
+{
+    font-size: 10px;
+    font-family:Inter;
+    color:#333333;
+    /* padding:18px 0 27px; */
+    padding: 9px 0 15px;
+}
+.footer-social-media
+{
+    display:flex;
+}
+.footer-social-icon
+{
+    margin-left:10px;
+}
+.footer-item
+{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: bold;
+    color:#777777;
+    padding:30px 0;
+}
+.footer-item ul li
+{
+    padding-bottom:9px;
+}
+.footer-item-2
+{
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    color:#777777;
+    padding:30px 0;
+}
+.footer-item-2 ul li
+{
+    padding-bottom:6px;
 }
