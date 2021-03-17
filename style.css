@@ -26,8 +26,9 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul , ul li, ul li a{
 	list-style: none;
+    text-decoration: none;
 }
 blockquote, q {
 	quotes: none;
@@ -46,6 +47,10 @@ table {
 {
     padding:0 5%;
 }
+header
+{
+    position:relative;
+}
 .header-container
 {
     border-bottom:1px solid #f2d46a;
@@ -59,6 +64,32 @@ table {
 {
     align-self:center;
 }
+.dropdown-content
+{
+      display:none;
+      position:absolute;
+      /* top:100%; */
+      right:5%;
+      z-index:1;
+      background-color: #fff;
+      padding: 40px 15px 20px;
+}
+.dropdown-content li
+{
+    color:#333333;
+    font-family: RobotoSlab;
+    font-size:16px;
+    padding-top:10px;
+}
+.dropdown-content li a:hover
+{
+    background:#f2d46a;
+}
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
 /* .........................section...................... */
 /* ...........................banner......................... */
 section
