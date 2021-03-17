@@ -101,3 +101,51 @@ section
     color:#e5b400;
     padding:27px;
 }
+/* .........................main-section................... */
+.main-text-container
+{
+    background:#ffffff;
+    padding: 50px 260px 50px 60px;
+}
+.main-text-container ul
+{
+    display:flex;
+}
+.main-text-container ul li
+{
+    display:flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    color:#777777;
+}
+.main-icon
+{
+    padding-right:8px;
+}
+.main-calander
+{
+    margin-left:20px;
+}
+.main-text-item-1, .main-text-item-2, .main-subtext
+{
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.88;
+    color:#333333;
+}
+.main-text-item-1
+{
+    padding:42px 0;
+}
+.main-heading
+{
+    color:#deb41b;
+    font-family:Inter;
+    font-size:32px;
+}
+.main-subtext
+{
+    padding:20px 0;
+}
