@@ -215,7 +215,6 @@ section
     font-family: Inter;
     font-size: 12px;
     color:#777777;
-    padding-bottom:26px;
     line-height: 1.67;
 }
 .article-readmore-btn
@@ -282,4 +281,198 @@ footer
 .footer-item-2 ul li
 {
     padding-bottom:6px;
+}
+/* ...................media query........... */
+/* ............banner.............. */
+@media (min-width:320px)
+{
+    .banner-text-content h2
+    {
+        font-size:35px;
+    }
+}
+@media (min-width:576px)
+{
+    .banner-text-content h2
+    {
+        font-size:40px;
+    }
+}
+@media (min-width:768px)
+{
+    .banner-text-content h2
+    {
+        font-size:50px;
+    }
+}
+/* .................main-section............. */
+@media (min-width:320px)
+{
+    .main-text-item-1, .main-text-item-2, .main-subtext
+    {
+        font-size: 16px;
+    }
+    .main-text-container
+    {
+        padding: 50px 200px 50px 60px;
+    }
+}
+@media (min-width:578px)
+{
+    .main-text-item-1, .main-text-item-2, .main-subtext
+    {
+        font-size: 13px;
+    }
+    .main-text-container
+    {
+        padding: 50px 200px 50px 60px;
+    }
+}
+@media (min-width:768px)
+{
+    .main-text-item-1, .main-text-item-2, .main-subtext
+    {
+        font-size: 13px;
+    }
+    .main-text-container
+    {
+        padding: 50px 240px 50px 60px;
+    }
+}
+@media (min-width:992px)
+{
+    .main-text-item-1, .main-text-item-2, .main-subtext
+    {
+        font-size: 14px;
+    }
+    .main-text-container
+    {
+        padding: 50px 250px 50px 60px;
+    }
+}
+@media (min-width:1200px)
+{
+    .main-text-item-1, .main-text-item-2, .main-subtext
+    {
+        font-size: 16px;
+    }
+    .main-text-container
+    {
+        padding: 50px 260px 50px 60px;
+    }
+}
+/* ..................article-section............ */
+@media (min-width:578px)
+{
+    .article-container
+    {
+        width:100%
+    }
+    .article-readmore-btn
+    {
+        margin-bottom: 3px;
+        margin-top: 19px;
+    }
+}
+@media (min-width:768px)
+{
+    .article-container
+    {
+        width:100%
+    }
+    .article-readmore-btn
+    {
+        margin-bottom: 3px;
+        margin-top: 19px;
+    }
+}
+@media (min-width:992px)
+{
+    .article-container
+    {
+        width:85%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .article-container
+    {
+        display:flex;
+        width:65%;
+    }
+    .article-text-content
+    {
+        padding: 17px 30px;
+        width:unset;
+    }
+    .article-readmore-btn
+    {
+        margin-bottom: 3px;
+        margin-top: 19px;
+    }
+}
+/* .....................footer................ */
+@media (min-width:576px)
+{
+    .footer-container
+    {
+        width:90%;
+    }
+    .footer-item
+    {
+        font-size:10px;
+    }
+    .footer-item-2
+    {
+        font-size:10px
+    }
+    .footer-quirks-logo
+    {
+        width:70%;
+    }
+    .footer-logo p
+    {
+        font-size:8px;
+    }
+    .footer-yt
+    {
+        width:95%;
+    }
+    .footer-li, .footer-fb
+    {
+        width:84%;
+        margin-left:4px;
+    }
+}
+@media (min-width:768px)
+{
+    .footer-container
+    {
+        width:85%;
+    }
+    .footer-item
+    {
+        font-size:14px;
+    }
+    .footer-item-2
+    {
+        font-size:12px
+    }
+    .footer-quirks-logo
+    {
+        width:unset;
+    }
+    .footer-logo p
+    {
+        font-size:10px;
+    }
+    .footer-yt
+    {
+        width:100%;
+    }
+    .footer-li, .footer-fb
+    {
+        width:unset;
+        margin-left:10px;
+    }
 }
