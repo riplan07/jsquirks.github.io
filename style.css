@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul , ul li, ul li a{
+ol, ul , ul li, ul li a, a, button a{
 	list-style: none;
     text-decoration: none;
 }
@@ -109,7 +109,7 @@ section
 .banner-container
 {
     position:relative;
-    width:67%;
+    width:68%;
 }
 .banner-img-content img
 {
@@ -171,6 +171,7 @@ section
     padding: 20px 139px 30px 10px;
     bottom:4px;
     left:0;
+    right:0;
 }
 .banner-essential-text h2
 {
@@ -267,6 +268,10 @@ section
     font-family: Inter;
     font-size: 12px;
     padding:13px 26px;
+}
+.article-readmore-btn a
+{
+    color:#333333; 
 }
 /* .....................tags-section................ */
 .tags-wrapper-right
@@ -374,6 +379,10 @@ footer
 {
     padding-bottom:6px;
 }
+.footer-item ul li a, .footer-item-2 ul li a
+{
+    color:#777777;
+}
 /* .......................media query.................... */
 /* ...........................header.......................... */
 @media (min-width:320px)
@@ -426,6 +435,7 @@ footer
         right:7px;
         padding: 13px 0 15px 13px;
         bottom: 3%;
+        right:3%;
     }
     .banner-text-content h2
     {
@@ -468,10 +478,11 @@ footer
     {
         padding: 25px 0 40px 30px;
         bottom: 1%;
+        right:3px;
     }
     .banner-text-content h2
     {
-        font-size: 17px
+        font-size: 12px
     }
     .banner-git-commands li
     {
@@ -492,7 +503,7 @@ footer
     }
     .banner-essential-text h2
     {
-        font-size: 7px;
+        font-size: 12px;
     }
 }
 @media (min-width:768px)
@@ -508,21 +519,20 @@ footer
     }
     .banner-text-content
     {
-        right:7px;
         padding: 30px 0 60px 40px;
     }
     .banner-text-content h2
     {
-        font-size: 11px
+        font-size: 17px
     }
     .banner-git-commands li
     {
-        font-size: 9px;
+        font-size: 8px;
     }
     .banner-icon
     {
         padding-right: 7px;
-        width:unset;
+        width:21px;
     }
     .banner-calander
     {
@@ -530,7 +540,7 @@ footer
     }
     .banner-essential-text h2
     {
-        font-size: 13px;
+        font-size: 17px;
     }
 }
 @media (min-width:992px)
@@ -559,6 +569,7 @@ footer
     .banner-icon
     {
         padding-right:10px;
+        width:unset;
     }
     .banner-calander
     {
@@ -592,7 +603,7 @@ footer
     }
     .article-section
     {
-        width:67%
+        width:68%;
     }
     .article-container
     {
@@ -600,11 +611,12 @@ footer
     }
     .article-img-content img
     {
-        max-width:75px;
+        max-width:83px;
     }
     .article-text-content
     {
         padding: 5px 12px;
+        width:69%;
     }
     .article-text-content h2
     {
@@ -679,11 +691,12 @@ footer
     }
     .article-img-content img
     {
-        max-width:149px;
+        max-width:167px;
     }
     .article-text-content
     {
-        padding: 7px 24px;
+        padding: 7px 17px;
+        width:unset;
     }
     .article-text-content h2
     {
@@ -709,8 +722,8 @@ footer
     }
     .article-text-content h6
     {
-        padding-bottom: 11px;
-        font-size: 6px;
+        padding-bottom: 9px;
+        font-size: 7px;
     }
     .article-readmore-btn
     {
@@ -720,7 +733,7 @@ footer
     .tags-rectangle-img 
     {
         padding: 21px 25px 26px 20px;
-        max-width: 120px;
+        max-width: 135px;
         height:auto;
     }
     .tags-btn
@@ -910,6 +923,7 @@ footer
     .article-text-content h2
     {
         font-size: 24px;
+        padding-bottom:15px;
     }
     .article-git-commands
     {
@@ -918,6 +932,10 @@ footer
     .article-git-commands li
     {
         font-size:12px;
+    }
+    .article-calander
+    {
+    margin-left:15px;
     }
     .article-text-content h6
     {
