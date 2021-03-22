@@ -185,6 +185,11 @@ section
     border:none;
     padding: 6px 18px 6px 10px;
 }
+.article-btn:hover
+{
+    background-color:#f7d14e;
+    box-shadow: 2px 2px #666;
+}
 .article-section
 {
     width:64%;
@@ -254,6 +259,11 @@ section
     font-family: Inter;
     font-size: 12px;
     padding:13px 26px;
+}
+.article-readmore-btn:hover
+{
+    background-color:#f7d14e;
+    box-shadow: 2px 2px #666;
 }
 .article-readmore-btn a
 {
@@ -357,6 +367,14 @@ footer
 /* ............banner.............. */
 @media (min-width:320px)
 {
+    .banner-img-content img
+    {
+        height: auto;
+    }
+    .banner-text-content
+    {
+        bottom: 7%;
+    }
     .banner-text-content h2 
     {
         font-size: 16px;
@@ -364,6 +382,10 @@ footer
 }
 @media (min-width:576px)
 {
+    .banner-text-content
+    {
+        bottom: 3%;
+    }
     .banner-text-content h2
     {
         font-size:40px;
@@ -371,6 +393,10 @@ footer
 }
 @media (min-width:768px)
 {
+    .banner-img-content img
+    {
+        height: fit-content;
+    }
     .banner-text-content h2
     {
         font-size:50px;
@@ -472,6 +498,7 @@ footer
     .article-text-content
     {
         padding: 5px 12px;
+        width:42%;
     }
     .article-text-content h2
     {
@@ -521,6 +548,7 @@ footer
     .article-text-content
     {
         padding: 7px 24px;
+        width:unset;
     }
     .article-text-content h2
     {
@@ -680,6 +708,10 @@ footer
     {
         font-size:12px;
     }
+    .article-calander
+    {
+        margin-left: 15px;
+    }
     .article-text-content h6
     {
         padding-bottom: 26px;
@@ -687,114 +719,10 @@ footer
     }
     .article-readmore-btn
     {
-        font-size: 11px;
+        font-size: 12px;
         padding: 13px 26px;
     }
 }
-/* .....................footer................ */
-/* @media (min-width:320px)
-{
-    .footer-container
-    {
-        width:100%;
-    }
-    .footer-item
-    {
-        font-size:6px;
-    }
-    .footer-item-2
-    {
-        font-size:6px
-    }
-    .footer-item ul li
-    {
-        padding-bottom: 7px;
-    }
-    .footer-quirks-logo
-    {
-        width:50%;
-    }
-    .footer-logo p
-    {
-        font-size:5px;
-    }
-    .footer-yt
-    {
-        max-width:53px;
-    }
-    .footer-li, .footer-fb
-    {
-        max-width:9px;
-    }
-    .footer-item, .footer-item-2
-    {
-        padding:19px 0;
-    }
-}
-@media (min-width:576px)
-{
-    .footer-container
-    {
-        width:90%;
-    }
-    .footer-item
-    {
-        font-size:10px;
-    }
-    .footer-item-2
-    {
-        font-size:10px
-    }
-    .footer-quirks-logo
-    {
-        width:70%;
-    }
-    .footer-logo p
-    {
-        font-size:8px;
-    }
-    .footer-yt
-    {
-        width:95%;
-    }
-    .footer-li, .footer-fb
-    {
-        width:84%;
-        margin-left:4px;
-    }
-}
-@media (min-width:768px)
-{
-    .footer-container
-    {
-        width:85%;
-    }
-    .footer-item
-    {
-        font-size:14px;
-    }
-    .footer-item-2
-    {
-        font-size:12px
-    }
-    .footer-quirks-logo
-    {
-        width:unset;
-    }
-    .footer-logo p
-    {
-        font-size:10px;
-    }
-    .footer-yt
-    {
-        width:100%;
-    }
-    .footer-li, .footer-fb
-    {
-        width:unset;
-        margin-left:10px;
-    }
-} */
 @media (min-width:320px)
 {
     .footer-container
