@@ -136,7 +136,6 @@ section {
   padding: 30px 0 60px 40px;
   background: rgba(0, 0, 0, 0.44);
   bottom: 1%;
-  /* width: 95%; */
   left: 0;
   right: 0;
 }
@@ -342,6 +341,7 @@ section {
 
 .tags-rectangle-img {
   padding: 29px 27px;
+  width: 80%;
 }
 
 /* ........................Resources-section.................. */
@@ -472,8 +472,8 @@ footer {
   .banner-text-content {
     right: 7px;
     padding: 13px 0 15px 13px;
-    bottom: 3%;
-    right: 3%;
+    bottom: 1%;
+    right: 1%;
   }
   .banner-text-content h2 {
     font-size: 8px;
@@ -507,7 +507,7 @@ footer {
   .banner-text-content {
     padding: 25px 0 40px 30px;
     bottom: 1%;
-    right: 3px;
+    right: 4px;
   }
   .banner-text-content h2 {
     font-size: 12px;
@@ -648,8 +648,6 @@ footer {
   }
   .tags-rectangle-img {
     padding: 14px 19px 16px 14px;
-    max-width: 60px;
-    height: auto;
   }
   .tags-btn {
     margin: 12px 0;
@@ -710,8 +708,6 @@ footer {
   }
   .tags-rectangle-img {
     padding: 21px 25px 26px 20px;
-    max-width: 135px;
-    height: auto;
   }
   .tags-btn {
     margin: 16px 0;
@@ -759,7 +755,7 @@ footer {
     width: 20%;
   }
   .article-calander {
-    margin-left: 4px;
+    margin-left: 6px;
   }
   .article-text-content h6 {
     padding-bottom: 14px;
@@ -776,7 +772,6 @@ footer {
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
-    max-width: 174px;
   }
   .resources-btn {
     margin: 17px 0;
@@ -816,6 +811,9 @@ footer {
     padding-right: 10px;
     width: unset;
   }
+  .article-calander {
+    margin-left: 12px;
+  }
   .article-text-content h6 {
     padding-bottom: 18px;
     font-size: 11px;
@@ -832,7 +830,6 @@ footer {
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
-    max-width: 240px;
   }
   .resources-btn {
     margin: 18px 0;
@@ -888,7 +885,7 @@ footer {
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
-    max-width: 302px;
+    width: 80%;
   }
   .resources-text-content ul {
     padding: 20px 0px 36px 19px;
