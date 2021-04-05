@@ -493,7 +493,7 @@ footer {
 /* ..................article-section............ */
 @media (min-width: 320px) {
   .article-section {
-    width: 71%;
+    width: 100%;
   }
   .article-btn {
     margin: 12px 0;
@@ -501,21 +501,26 @@ footer {
     padding: 4px 10px 5px 8px;
   }
   .article-img-content img {
-    max-width: 90px;
+    max-width: 130px;
   }
   .article-text-content {
     padding: 5px 12px;
-    width: 42%;
+    width: 70%;
   }
   .article-text-content h2 {
-    font-size: 4px;
-    padding-bottom: 3px;
+    /* font-size: 4px;
+    padding-bottom: 3px; */
+    font-size: 10px;
+    padding-bottom: 6px;
   }
   .article-git-commands {
-    padding-bottom: 2px;
+    /* padding-bottom: 2px; */
+    padding-bottom: 3px;
+    
   }
   .article-git-commands li {
-    font-size: 4px;
+    /* font-size: 4px; */
+    font-size: 5px;
   }
   .article-icon {
     padding-right: 1px;
@@ -525,12 +530,16 @@ footer {
     margin-left: 4px;
   }
   .article-text-content h6 {
-    padding-bottom: 1px;
-    font-size: 3px;
+    /* padding-bottom: 1px;
+    font-size: 3px; */
+    padding-bottom: 4px;
+    font-size: 6px;
   }
   .article-readmore-btn {
-    font-size: 5px;
-    padding: 2px 5px;
+    /* font-size: 5px;
+    padding: 2px 5px; */
+    font-size: 7px;
+    padding: 3px 7px;
   }
 }
 

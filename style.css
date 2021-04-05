@@ -462,24 +462,30 @@ footer {
 
 /* ..........................banner-section................ */
 @media (min-width: 320px) {
-  .banner-img-content {
-    width: 99%;
+   .banner-section
+  {
+    display:block;
   }
-  .banner-img-content img, .banner-essential-img img, .banner-selector-img img {
+  .banner-container
+  {
+    width:unset;
+  }
+  .banner-img-content img {
     width: 100%;
-    height: auto;
   }
   .banner-text-content {
     right: 7px;
     padding: 13px 0 15px 13px;
     bottom: 1%;
-    right: 1%;
+    /* right: 1%; */
+    right: 0;
   }
   .banner-text-content h2 {
     font-size: 8px;
+    font-size: 13px;
   }
   .banner-git-commands li {
-    font-size: 4px;
+    font-size: 7px;
   }
   .banner-icon {
     padding-right: 4px;
@@ -489,20 +495,28 @@ footer {
     margin-left: 3px;
   }
   .banner-essential-text {
-    padding: 7px 0px 11px 10px;
+    padding: 20px 139px 30px 10px;
   }
   .banner-essential-text h2 {
-    font-size: 7px;
+    font-size: 13px;
+  }
+  .banner-container-2 
+  {
+    width:unset;
+  }
+  .banner-essential-img img, .banner-selector-img img
+  {
+    width:100%;
   }
 }
 
 @media (min-width: 576px) {
+  .banner-section
+  {
+    display:flex;
+  }
   .banner-img-content {
     width: 99%;
-  }
-  .banner-img-content img, .banner-essential-img img, .banner-selector-img img {
-    width: 100%;
-    height: auto;
   }
   .banner-text-content {
     padding: 25px 0 40px 30px;
@@ -531,16 +545,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .banner-img-content {
-    width: 99%;
-  }
-  .banner-img-content img, .banner-essential-img img, .banner-selector-img img {
-    width: 100%;
-    height: auto;
-  }
-  .banner-text-content {
-    padding: 30px 0 60px 40px;
-  }
   .banner-text-content h2 {
     font-size: 17px;
   }
@@ -591,7 +595,12 @@ footer {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px)
+ {
+   .banner-container
+   {
+     width:68%;
+   }
   .banner-essential-text h2 {
     font-size: 24px;
   }
@@ -600,33 +609,43 @@ footer {
 /* ......................media query.................... */
 /* ..........................main-section................... */
 @media (min-width: 320px) {
+  .main-container
+  {
+    display:block;
+    padding-bottom: 40px;
+  }
   .article-btn {
     margin: 12px 0;
-    font-size: 5px;
-    padding: 4px 10px 5px 8px;
+    font-size: 18px;
+    padding: 6px 18px 7px 13px;
   }
   .article-section {
-    width: 68%;
+    width: 100%;
+    margin-bottom:unset;
   }
   .article-container {
     width: 99%;
   }
   .article-img-content img {
-    max-width: 83px;
+    max-width: 135px;
+    /* width:80%; */
   }
   .article-text-content {
     padding: 5px 12px;
     width: 69%;
   }
   .article-text-content h2 {
-    font-size: 4px;
-    padding-bottom: 3px;
+    /* font-size: 4px;
+    padding-bottom: 3px; */
+    font-size: 11px;
+    padding-bottom: 6px;
   }
   .article-git-commands {
     padding-bottom: 2px;
   }
   .article-git-commands li {
-    font-size: 4px;
+    /* font-size: 4px; */
+    font-size: 6px;
   }
   .article-icon {
     padding-right: 1px;
@@ -636,50 +655,68 @@ footer {
     margin-left: 4px;
   }
   .article-text-content h6 {
-    padding-bottom: 1px;
-    font-size: 3px;
+    /* padding-bottom: 1px;
+    font-size: 3px; */
+    padding-bottom: 9px;
+    font-size: 6px;
   }
   .article-readmore-btn {
-    font-size: 5px;
-    padding: 2px 5px;
+    /* font-size: 5px;
+    padding: 2px 5px; */
+    font-size: 10px;
+    padding: 3px 6px;
   }
   .tags-wrapper-right {
-    width: 33%;
+    width:unset;
   }
   .tags-rectangle-img {
-    padding: 14px 19px 16px 14px;
+    /* padding: 14px 19px 16px 14px; */
+    padding:14px 19px;
+    width:89%;
   }
   .tags-btn {
     margin: 12px 0;
-    font-size: 5px;
-    padding: 4px 10px 5px 8px;
-  }
+    font-size: 18px;
+    padding: 6px 18px 7px 13px;
+ }
   .resources-btn {
     margin: 12px 0;
-    font-size: 5px;
-    padding: 4px 10px 5px 8px;
+    font-size: 18px;
+    padding: 6px 18px 7px 13px;
   }
   .resources-text-content ul {
     padding: 8px 7px 7px 9px;
   }
   .resources-text-content ul li {
-    font-size: 3px;
-    padding: 2px;
+    /* font-size: 3px;
+    padding: 2px; */
+    font-size: 12px;
+    padding: 5px;
   }
 }
 
 @media (min-width: 576px) {
+  .main-container
+  {
+    display:flex;
+    padding-bottom: unset;
+  }
   .article-btn {
     margin: 16px 0;
     font-size: 10px;
     padding: 5px 15px 6px 8px;
+  }
+  .article-section
+  {
+    width:68%;
+    margin-bottom:15px;
   }
   .article-img-content img {
     max-width: 167px;
   }
   .article-text-content {
     padding: 7px 17px;
-    width: unset;
+    /* width: unset; */
   }
   .article-text-content h2 {
     font-size: 13px;
@@ -705,14 +742,20 @@ footer {
   .article-readmore-btn {
     font-size: 7px;
     padding: 4px 11px;
+    border-radius: 5px;
   }
   .tags-rectangle-img {
     padding: 21px 25px 26px 20px;
+    width:80%;
   }
   .tags-btn {
     margin: 16px 0;
     font-size: 10px;
     padding: 5px 15px 6px 8px;
+  }
+  .tags-wrapper-right
+  {
+    width:33%;
   }
   .resources-btn {
     margin: 16px 0;
@@ -733,6 +776,10 @@ footer {
     margin: 17px 0;
     font-size: 13px;
     padding: 5px 15px 6px 8px;
+  }
+  .article-section
+  {
+    margin-bottom:15px;
   }
   .article-img-content img {
     max-width: 220px;
@@ -764,6 +811,10 @@ footer {
   .article-readmore-btn {
     font-size: 10px;
     padding: 7px 22px;
+  }
+  .tags-wrapper-right
+  {
+    width:33%;
   }
   .tags-btn {
     margin: 17px 0;
@@ -877,6 +928,10 @@ footer {
   .article-readmore-btn {
     font-size: 12px;
     padding: 13px 26px;
+  }
+  .tags-wrapper-right
+  {
+    width:32%;
   }
   .tags-btn, .resources-btn {
     margin: 20px 0;

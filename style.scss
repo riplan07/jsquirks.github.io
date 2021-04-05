@@ -434,6 +434,10 @@ footer
 /* ..........................banner-section................ */
 @media (min-width:320px)
 {
+    .banner-section
+    {
+        display:block;
+    }
     .banner-img-content
     {
         width:99%;
