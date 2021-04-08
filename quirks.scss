@@ -69,7 +69,6 @@ table {
 {
       display:none;
       position:absolute;
-      /* top:100%; */
       right:5%;
       z-index:1;
       background-color: #fff;
@@ -81,6 +80,10 @@ table {
     font-family: RobotoSlab;
     font-size:16px;
     padding-top:10px;
+}
+.dropdown-content li a
+{
+    color:green;
 }
 .dropdown-content li a:hover
 {
@@ -137,21 +140,24 @@ section
     background:#ffffff;
     padding: 50px 260px 50px 60px;
 }
-.main-text-container ul
+.main-text-container
 {
-    display:flex;
-}
-.main-text-container ul li
-{
-    @include important-text;
-    display:flex;
-    align-items: center;
-    font-weight: 500;
-    color:#777777;
-}
-.main-icon
-{
-    padding-right:8px;
+    ul
+    {
+        display:flex;
+    }
+    ul li
+    {
+        @include important-text;
+        display:flex;
+        align-items: center;
+        font-weight: 500;
+        color:#777777;
+    }
+    ul li img
+    {
+        padding-right:8px;
+    }
 }
 .main-calander
 {
@@ -214,53 +220,56 @@ section
     padding: 16px 42px 16px 35px;
     margin-bottom: 4px;
 }
-.article-text-content h2
+.article-text-content
 {
-    font-family: RobotoSlab;
-    font-size: 24px;
-    color:#e5b400;
-    padding-bottom:15px;
-}
-.article-git-commands
-{
-    display:flex;
-    padding-bottom:20px;
-}
-.article-icon
-{
-    padding-right:10px;
-}
-.article-git-commands li
-{
-    @include important-text;
-    display:flex;
-    align-items: center;
-    color:#777777;
+    h2
+    {
+        font-family: RobotoSlab;
+        font-size: 24px;
+        color:#e5b400;
+        padding-bottom:15px;
+    }
+    ul
+    {
+        display:flex;
+        padding-bottom:20px;
+    }
+    ul li
+    {
+        @include important-text;
+        display:flex;
+        align-items: center;
+        color:#777777;
+    }
+    ul li img
+    {
+        padding-right:10px;
+    }
+    p
+    {
+        @include important-text;
+        color:#777777;
+        margin-left:8px; 
+    }
+    h6
+    {
+        @include important-text;
+        color:#777777;
+        padding-bottom:26px;
+        line-height: 1.67; 
+    }
+    button
+    {
+        @include important-text;
+        color:#333333;
+        background:#f2d46a;
+        border:none;
+        padding:13px 26px;
+    }
 }
 .article-calander
 {
     margin-left:15px;
-}
-.article-text-content p
-{
-    @include important-text;
-    color:#777777;
-    margin-left:8px;
-}
-.article-text-content h6
-{
-    @include important-text;
-    color:#777777;
-    padding-bottom:26px;
-    line-height: 1.67;
-}
-.article-readmore-btn
-{
-    @include important-text;
-    color:#333333;
-    background:#f2d46a;
-    border:none;
-    padding:13px 26px;
 }
 .article-readmore-btn:hover
 {
@@ -292,7 +301,6 @@ footer
     font-size: 10px;
     font-family:Inter;
     color:#333333;
-    /* padding:18px 0 27px; */
     padding: 9px 0 15px;
 }
 .footer-social-media
@@ -422,9 +430,12 @@ footer
     {
         font-size:29px;
     }
-    .main-text-container ul li
+    .main-text-container
     {
-        font-size:11px;
+        ul li
+        {
+            font-size:11px;
+        }
     }
 }
 @media (min-width:578px)
@@ -484,255 +495,247 @@ footer
     }
 }
 /* ..................article-section............ */
-@media (min-width:320px)
-{
-    .article-section
-    {
-        width:71%;
+@media (min-width: 320px) {
+    .article-section {
+      width: 100%;
     }
-    .article-btn
-    {
-        margin: 12px 0;
-        font-size: 5px;
-        padding: 4px 10px 5px 8px;
+    .article-btn {
+      margin: 12px 0;
+      font-size: 10px;
+      padding: 4px 10px 5px 8px;
     }
-    .article-img-content img
-    {
-        max-width:90px;
+    .article-img-content img {
+      max-width: 143px;
+      width: 100%;
     }
-    .article-text-content
-    {
+    .article-text-content {
         padding: 5px 12px;
-        width:42%;
-    }
-    .article-text-content h2
+        width: 42%;
+      }
+    .article-text-content
     {
-        font-size: 4px;
-        padding-bottom:3px;
+        h2
+        {
+            font-size: 11px;
+            padding-bottom: 6px;
+        }
+        ul
+        {
+            padding-bottom: 4px;
+        }
+        ul li
+        {
+            font-size: 5px;
+        }
+        ul li img
+        {
+            padding-right: 1px;
+            width: 13%;
+        }
+        h6
+        {
+            padding-bottom: 8px;
+            font-size: 7px;
+        }
+        button
+        {
+            font-size: 5px;
+            padding: 2px 5px;
+        }
     }
-    .article-git-commands
-    {
-        padding-bottom:2px;
+    .article-calander {
+      margin-left: 4px;
     }
-    .article-git-commands li
-    {
-        font-size:4px;
+  }
+  
+  @media (min-width: 576px) {
+    .article-section {
+      width: 64%;
     }
-    .article-icon
-    {
-        padding-right: 1px;
-        width: 13%;
+    .article-btn {
+      margin: 16px 0;
+      font-size: 10px;
+      padding: 5px 15px 6px 8px;
     }
-    .article-calander
-    {
-        margin-left: 4px;
+    .article-img-content img {
+      max-width: 149px;
     }
-    .article-text-content h6
-    {
-        padding-bottom: 1px;
-        font-size: 3px;
-    }
-    .article-readmore-btn
-    {
-        font-size: 5px;
-        padding: 2px 5px;
-    }
-}
-@media (min-width:576px)
-{
-    .article-section
-    {
-        width:64%;
-    }
-    .article-btn
-    {   
-        margin: 16px 0;
-        font-size: 10px;
-        padding: 5px 15px 6px 8px;
-    }
-    .article-img-content img
-    {
-        max-width:149px;
+    .article-text-content {
+      padding: 7px 24px;
+      width: 41%;
     }
     .article-text-content
     {
-        padding: 7px 24px;
-        width:57%;
+        h2
+        {
+            font-size: 13px;
+            padding-bottom: 5px;
+        }
+        ul
+        {
+            padding-bottom: 7px;
+        }
+        ul li
+        {
+            font-size: 8px;
+        }
+        ul li img
+        {
+            padding-right: 3px;
+            width: 18%;
+        }
+        h6
+        {
+            padding-bottom: 11px;
+            font-size: 6px;
+        }
+        button
+        {
+            font-size: 7px;
+            padding: 4px 11px;
+        }
     }
-    .article-text-content h2
-    {
-        font-size: 13px;
-        padding-bottom:5px;
+    .article-calander {
+      margin-left: 4px;
     }
-    .article-git-commands
-    {
-        padding-bottom:7px;
+}  
+  @media (min-width: 768px) {
+    .article-btn {
+      margin: 17px 0;
+      font-size: 13px;
+      padding: 5px 15px 6px 8px;
     }
-    .article-git-commands li
-    {
-        font-size:8px;
+    .article-img-content img {
+      max-width: 220px;
     }
-    .article-icon
-    {
-        padding-right: 3px;
-        width: 18%;
-    }
-    .article-calander
-    {
-        margin-left: 4px;
-    }
-    .article-text-content h6
-    {
-        padding-bottom: 11px;
-        font-size: 6px;
-    }
-    .article-readmore-btn
-    {
-        font-size: 7px;
-        padding: 4px 11px;
-    }
-}
-@media (min-width:768px)
-{
-    .article-btn
-    {   
-        margin: 17px 0;
-        font-size: 13px;
-        padding: 5px 15px 6px 8px;    
-    }
-    .article-img-content img
-    {
-        max-width:220px;
+    .article-text-content {
+      padding: 8px 25px;
+      width: 53%;
     }
     .article-text-content
     {
-        padding: 8px 25px;
-        width:unset;
+        h2
+        {
+            font-size: 15px;
+            padding-bottom: 7px;
+        }
+        ul
+        {
+            padding-bottom: 5px;
+        }
+        ul li
+        {
+            font-size: 8px;
+        }
+        ul li img
+        {
+            padding-right: 7px;
+      width: 20%;
+        }
+        h6
+        {
+            padding-bottom: 14px;
+            font-size: 9px;
+        }
+        button
+        {
+            font-size: 10px;
+            padding: 7px 22px;
+        }
     }
-    .article-text-content h2
-    {
-        font-size: 15px;
-        padding-bottom:7px;
+    .article-calander {
+      margin-left: 4px;
     }
-    .article-git-commands
-    {
-        padding-bottom:5px;
+  }
+  @media (min-width: 992px) {
+    .article-btn {
+      margin: 18px 0;
+      font-size: 15px;
+      padding: 5px 16px 6px 9px;
     }
-    .article-git-commands li
-    {
-        font-size:8px;
+    .article-img-content img {
+      max-width: 280px;
     }
-    .article-icon
-    {
-        padding-right: 7px;
-        width: 20%;
-    }
-    .article-calander
-    {
-        margin-left: 4px;
-    }
-    .article-text-content h6
-    {
-        padding-bottom: 14px;
-        font-size: 9px;
-    }
-    .article-readmore-btn
-    {
-        font-size: 10px;
-        padding: 7px 22px;
-    }
-}
-@media (min-width:992px)
-{
-    .article-btn
-    {
-        margin: 18px 0;
-        font-size: 15px;
-        padding: 5px 16px 6px 9px;
-    }
-    .article-img-content img
-    {
-        max-width:280px;
+    .article-text-content {
+      padding: 12px 30px;
+      width:46%;
     }
     .article-text-content
     {
-        padding: 12px 30px;
+        h2
+        {
+            font-size: 23px;
+        }
+        ul
+        {
+            padding-bottom: 16px;
+        }
+        ul li
+        {
+            font-size: 10px;
+        }
+        ul li img
+        {
+            padding-right: 10px;
+            width: unset;;
+        }
+        h6
+        {
+            padding-bottom: 18px;
+            font-size: 11px;
+        }
+        button
+        {
+            font-size: 11px;
+            padding: 11px 26px;
+            margin-top: 0;
+        }
     }
-    .article-text-content h2
-    {
-        font-size: 23px;
+  }
+  
+  @media (min-width: 1200px) {
+    .article-btn {
+      margin: 20px 0;
+      font-size: 18px;
+      padding: 6px 18px 6px 10px;
     }
-    .article-git-commands
-    {
-        padding-bottom:16px;
+    .article-img-content img {
+      max-width: 320px;
+      height: auto;
     }
-    .article-git-commands li
-    {
-        font-size:10px;
-    }
-    .article-icon
-    {
-        padding-right: 10px;
-        width:unset;
-    }
-    .article-text-content h6
-    {
-        padding-bottom: 18px;
-        font-size:11px;
-    }
-    .article-readmore-btn
-    {
-        font-size: 11px;
-        padding: 11px 26px;
-        margin-top:0;
-    }
-}    
-@media (min-width:1200px)
-{
-    .article-btn
-    {
-        margin: 20px 0;
-        font-size: 18px;
-        padding: 6px 18px 6px 10px;
-        
-    }
-    .article-img-content img
-    {
-        max-width:320px;
-        height:auto;
+    .article-text-content {
+      padding: 16px 42px 16px 35px;
     }
     .article-text-content
     {
-        padding: 16px 42px 16px 35px;
+        h2
+        {
+            font-size: 24px;
+            padding-bottom: 15px;
+        }
+        ul
+        {
+            padding-bottom: 20px;
+        }
+        ul li
+        {
+            font-size: 12px;
+        }
+        h6
+        {
+            padding-bottom: 26px;
+            font-size: 12px;
+        }
+        button
+        {
+            font-size: 12px;
+            padding: 13px 26px;
+        }
     }
-    .article-text-content h2
-    {
-        font-size: 24px;
-        padding-bottom: 15px;
+    .article-calander {
+      margin-left: 15px;
     }
-    .article-git-commands
-    {
-        padding-bottom:20px;
-    }
-    .article-git-commands li
-    {
-        font-size:12px;
-    }
-    .article-calander
-    {
-        margin-left: 15px;
-    }
-    .article-text-content h6
-    {
-        padding-bottom: 26px;
-        font-size:12px;
-    }
-    .article-readmore-btn
-    {
-        font-size: 12px;
-        padding: 13px 26px;
-    }
-}
+  }
 @media (min-width:320px)
 {
     .footer-container
