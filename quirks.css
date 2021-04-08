@@ -76,7 +76,6 @@ table {
 .dropdown-content {
   display: none;
   position: absolute;
-  /* top:100%; */
   right: 5%;
   z-index: 1;
   background-color: #fff;
@@ -88,6 +87,10 @@ table {
   font-family: RobotoSlab;
   font-size: 16px;
   padding-top: 10px;
+}
+
+.dropdown-content li a {
+  color: green;
 }
 
 .dropdown-content li a:hover {
@@ -166,7 +169,7 @@ section {
   color: #777777;
 }
 
-.main-icon {
+.main-text-container ul li img {
   padding-right: 8px;
 }
 
@@ -237,18 +240,14 @@ section {
   padding-bottom: 15px;
 }
 
-.article-git-commands {
+.article-text-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
 }
 
-.article-icon {
-  padding-right: 10px;
-}
-
-.article-git-commands li {
+.article-text-content ul li {
   font-family: Inter;
   font-size: 12px;
   display: -webkit-box;
@@ -260,8 +259,8 @@ section {
   color: #777777;
 }
 
-.article-calander {
-  margin-left: 15px;
+.article-text-content ul li img {
+  padding-right: 10px;
 }
 
 .article-text-content p {
@@ -279,13 +278,17 @@ section {
   line-height: 1.67;
 }
 
-.article-readmore-btn {
+.article-text-content button {
   font-family: Inter;
   font-size: 12px;
   color: #333333;
   background: #f2d46a;
   border: none;
   padding: 13px 26px;
+}
+
+.article-calander {
+  margin-left: 15px;
 }
 
 .article-readmore-btn:hover {
@@ -322,7 +325,6 @@ footer {
   font-size: 10px;
   font-family: Inter;
   color: #333333;
-  /* padding:18px 0 27px; */
   padding: 9px 0 15px;
 }
 
@@ -497,49 +499,41 @@ footer {
   }
   .article-btn {
     margin: 12px 0;
-    font-size: 5px;
+    font-size: 10px;
     padding: 4px 10px 5px 8px;
   }
   .article-img-content img {
-    max-width: 130px;
+    max-width: 143px;
+    width: 100%;
   }
   .article-text-content {
     padding: 5px 12px;
-    width: 70%;
+    width: 42%;
   }
   .article-text-content h2 {
-    /* font-size: 4px;
-    padding-bottom: 3px; */
-    font-size: 10px;
+    font-size: 11px;
     padding-bottom: 6px;
   }
-  .article-git-commands {
-    /* padding-bottom: 2px; */
-    padding-bottom: 3px;
-    
+  .article-text-content ul {
+    padding-bottom: 4px;
   }
-  .article-git-commands li {
-    /* font-size: 4px; */
+  .article-text-content ul li {
     font-size: 5px;
   }
-  .article-icon {
+  .article-text-content ul li img {
     padding-right: 1px;
     width: 13%;
   }
+  .article-text-content h6 {
+    padding-bottom: 8px;
+    font-size: 7px;
+  }
+  .article-text-content button {
+    font-size: 5px;
+    padding: 2px 5px;
+  }
   .article-calander {
     margin-left: 4px;
-  }
-  .article-text-content h6 {
-    /* padding-bottom: 1px;
-    font-size: 3px; */
-    padding-bottom: 4px;
-    font-size: 6px;
-  }
-  .article-readmore-btn {
-    /* font-size: 5px;
-    padding: 2px 5px; */
-    font-size: 7px;
-    padding: 3px 7px;
   }
 }
 
@@ -557,32 +551,32 @@ footer {
   }
   .article-text-content {
     padding: 7px 24px;
-    width: 57%;
+    width: 41%;
   }
   .article-text-content h2 {
     font-size: 13px;
     padding-bottom: 5px;
   }
-  .article-git-commands {
+  .article-text-content ul {
     padding-bottom: 7px;
   }
-  .article-git-commands li {
+  .article-text-content ul li {
     font-size: 8px;
   }
-  .article-icon {
+  .article-text-content ul li img {
     padding-right: 3px;
     width: 18%;
-  }
-  .article-calander {
-    margin-left: 4px;
   }
   .article-text-content h6 {
     padding-bottom: 11px;
     font-size: 6px;
   }
-  .article-readmore-btn {
+  .article-text-content button {
     font-size: 7px;
     padding: 4px 11px;
+  }
+  .article-calander {
+    margin-left: 4px;
   }
 }
 
@@ -597,32 +591,32 @@ footer {
   }
   .article-text-content {
     padding: 8px 25px;
-    width: unset;
+    width: 53%;
   }
   .article-text-content h2 {
     font-size: 15px;
     padding-bottom: 7px;
   }
-  .article-git-commands {
+  .article-text-content ul {
     padding-bottom: 5px;
   }
-  .article-git-commands li {
+  .article-text-content ul li {
     font-size: 8px;
   }
-  .article-icon {
+  .article-text-content ul li img {
     padding-right: 7px;
     width: 20%;
-  }
-  .article-calander {
-    margin-left: 4px;
   }
   .article-text-content h6 {
     padding-bottom: 14px;
     font-size: 9px;
   }
-  .article-readmore-btn {
+  .article-text-content button {
     font-size: 10px;
     padding: 7px 22px;
+  }
+  .article-calander {
+    margin-left: 4px;
   }
 }
 
@@ -637,17 +631,18 @@ footer {
   }
   .article-text-content {
     padding: 12px 30px;
+    width: 46%;
   }
   .article-text-content h2 {
     font-size: 23px;
   }
-  .article-git-commands {
+  .article-text-content ul {
     padding-bottom: 16px;
   }
-  .article-git-commands li {
+  .article-text-content ul li {
     font-size: 10px;
   }
-  .article-icon {
+  .article-text-content ul li img {
     padding-right: 10px;
     width: unset;
   }
@@ -655,7 +650,7 @@ footer {
     padding-bottom: 18px;
     font-size: 11px;
   }
-  .article-readmore-btn {
+  .article-text-content button {
     font-size: 11px;
     padding: 11px 26px;
     margin-top: 0;
@@ -679,22 +674,22 @@ footer {
     font-size: 24px;
     padding-bottom: 15px;
   }
-  .article-git-commands {
+  .article-text-content ul {
     padding-bottom: 20px;
   }
-  .article-git-commands li {
+  .article-text-content ul li {
     font-size: 12px;
-  }
-  .article-calander {
-    margin-left: 15px;
   }
   .article-text-content h6 {
     padding-bottom: 26px;
     font-size: 12px;
   }
-  .article-readmore-btn {
+  .article-text-content button {
     font-size: 12px;
     padding: 13px 26px;
+  }
+  .article-calander {
+    margin-left: 15px;
   }
 }
 

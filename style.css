@@ -93,6 +93,10 @@ header {
   padding-top: 10px;
 }
 
+.dropdown-content li a {
+  color: green;
+}
+
 .dropdown-content li a:hover {
   background: #f2d46a;
 }
@@ -147,17 +151,13 @@ section {
   padding-bottom: 15px;
 }
 
-.banner-git-commands {
+.banner-text-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner-icon {
-  padding-right: 10px;
-}
-
-.banner-git-commands li {
+.banner-text-content ul li {
   font-family: Inter;
   font-size: 12px;
   display: -webkit-box;
@@ -167,6 +167,10 @@ section {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+}
+
+.banner-text-content ul li img {
+  padding-right: 10px;
 }
 
 .banner-calander {
@@ -303,7 +307,7 @@ section {
   line-height: 1.67;
 }
 
-.article-readmore-btn {
+.article-text-content button {
   font-family: Inter;
   font-size: 12px;
   color: #333333;
@@ -311,6 +315,7 @@ section {
   border: none;
   padding: 13px 26px;
   outline: none;
+  border-radius: 2px;
 }
 
 .article-readmore-btn a {
@@ -461,14 +466,13 @@ footer {
 }
 
 /* ..........................banner-section................ */
+/* ......................media query.................... */
 @media (min-width: 320px) {
-   .banner-section
-  {
-    display:block;
+  .banner-section {
+    display: block;
   }
-  .banner-container
-  {
-    width:unset;
+  .banner-container {
+    width: unset;
   }
   .banner-img-content img {
     width: 100%;
@@ -477,17 +481,16 @@ footer {
     right: 7px;
     padding: 13px 0 15px 13px;
     bottom: 1%;
-    /* right: 1%; */
     right: 0;
   }
   .banner-text-content h2 {
     font-size: 8px;
     font-size: 13px;
   }
-  .banner-git-commands li {
+  .banner-text-content ul li {
     font-size: 7px;
   }
-  .banner-icon {
+  .banner-text-content ul li img {
     padding-right: 4px;
     width: 20%;
   }
@@ -500,20 +503,19 @@ footer {
   .banner-essential-text h2 {
     font-size: 13px;
   }
-  .banner-container-2 
-  {
-    width:unset;
+  .banner-container-2 {
+    width: unset;
   }
-  .banner-essential-img img, .banner-selector-img img
-  {
-    width:100%;
+  .banner-essential-img img, .banner-selector-img img {
+    width: 100%;
   }
 }
 
 @media (min-width: 576px) {
-  .banner-section
-  {
-    display:flex;
+  .banner-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .banner-img-content {
     width: 99%;
@@ -526,12 +528,11 @@ footer {
   .banner-text-content h2 {
     font-size: 12px;
   }
-  .banner-git-commands li {
+  .banner-text-content ul li {
     font-size: 6px;
   }
-  .banner-icon {
+  .banner-text-content ul li img {
     padding-right: 6px;
-    width: 20%;
   }
   .banner-calander {
     margin-left: 5px;
@@ -548,10 +549,10 @@ footer {
   .banner-text-content h2 {
     font-size: 17px;
   }
-  .banner-git-commands li {
+  .banner-text-content ul li {
     font-size: 8px;
   }
-  .banner-icon {
+  .banner-text-content ul li img {
     padding-right: 7px;
     width: 21px;
   }
@@ -577,10 +578,10 @@ footer {
   .banner-text-content h2 {
     font-size: 24px;
   }
-  .banner-git-commands li {
+  .banner-text-content ul li {
     font-size: 12px;
   }
-  .banner-icon {
+  .banner-text-content ul li img {
     padding-right: 10px;
     width: unset;
   }
@@ -595,12 +596,10 @@ footer {
   }
 }
 
-@media (min-width: 1200px)
- {
-   .banner-container
-   {
-     width:68%;
-   }
+@media (min-width: 1200px) {
+  .banner-container {
+    width: 68%;
+  }
   .banner-essential-text h2 {
     font-size: 24px;
   }
@@ -609,42 +608,33 @@ footer {
 /* ......................media query.................... */
 /* ..........................main-section................... */
 @media (min-width: 320px) {
-  .main-container
-  {
-    display:block;
+  .main-container {
+    display: block;
     padding-bottom: 40px;
   }
-  .article-btn {
+  .article-btn, .tags-btn, .resources-btn {
     margin: 12px 0;
-    font-size: 18px;
-    padding: 6px 18px 7px 13px;
+    font-size: 12px;
+    padding: 6px 9px 7px 11px;
   }
   .article-section {
     width: 100%;
-    margin-bottom:unset;
+    margin-bottom: unset;
   }
   .article-container {
     width: 99%;
   }
   .article-img-content img {
     max-width: 135px;
-    /* width:80%; */
   }
   .article-text-content {
     padding: 5px 12px;
     width: 69%;
   }
-  .article-text-content h2 {
-    /* font-size: 4px;
-    padding-bottom: 3px; */
-    font-size: 11px;
-    padding-bottom: 6px;
-  }
   .article-git-commands {
     padding-bottom: 2px;
   }
   .article-git-commands li {
-    /* font-size: 4px; */
     font-size: 6px;
   }
   .article-icon {
@@ -654,73 +644,68 @@ footer {
   .article-calander {
     margin-left: 4px;
   }
+  .article-text-content h2 {
+    font-size: 11px;
+    padding-bottom: 6px;
+  }
   .article-text-content h6 {
-    /* padding-bottom: 1px;
-    font-size: 3px; */
     padding-bottom: 9px;
     font-size: 6px;
   }
-  .article-readmore-btn {
-    /* font-size: 5px;
-    padding: 2px 5px; */
+  .article-text-content button {
     font-size: 10px;
     padding: 3px 6px;
   }
   .tags-wrapper-right {
-    width:unset;
+    width: unset;
   }
   .tags-rectangle-img {
-    /* padding: 14px 19px 16px 14px; */
-    padding:14px 19px;
-    width:89%;
-  }
-  .tags-btn {
-    margin: 12px 0;
-    font-size: 18px;
-    padding: 6px 18px 7px 13px;
- }
-  .resources-btn {
-    margin: 12px 0;
-    font-size: 18px;
-    padding: 6px 18px 7px 13px;
+    padding: 14px 19px;
+    width: 89%;
   }
   .resources-text-content ul {
     padding: 8px 7px 7px 9px;
   }
   .resources-text-content ul li {
-    /* font-size: 3px;
-    padding: 2px; */
     font-size: 12px;
     padding: 5px;
   }
 }
 
 @media (min-width: 576px) {
-  .main-container
-  {
-    display:flex;
+  .main-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-bottom: unset;
   }
-  .article-btn {
+  .article-btn, .tags-btn, .resources-btn {
     margin: 16px 0;
     font-size: 10px;
     padding: 5px 15px 6px 8px;
   }
-  .article-section
-  {
-    width:68%;
-    margin-bottom:15px;
+  .article-section {
+    width: 68%;
+    margin-bottom: 15px;
   }
   .article-img-content img {
     max-width: 167px;
   }
   .article-text-content {
     padding: 7px 17px;
-    /* width: unset; */
+    width: unset;
   }
   .article-text-content h2 {
     font-size: 13px;
     padding-bottom: 5px;
+  }
+  .article-text-content h6 {
+    padding-bottom: 9px;
+    font-size: 7px;
+  }
+  .article-text-content button {
+    font-size: 7px;
+    padding: 4px 11px;
   }
   .article-git-commands {
     padding-bottom: 7px;
@@ -735,32 +720,12 @@ footer {
   .article-calander {
     margin-left: 4px;
   }
-  .article-text-content h6 {
-    padding-bottom: 9px;
-    font-size: 7px;
-  }
-  .article-readmore-btn {
-    font-size: 7px;
-    padding: 4px 11px;
-    border-radius: 5px;
-  }
   .tags-rectangle-img {
     padding: 21px 25px 26px 20px;
-    width:80%;
+    width: 80%;
   }
-  .tags-btn {
-    margin: 16px 0;
-    font-size: 10px;
-    padding: 5px 15px 6px 8px;
-  }
-  .tags-wrapper-right
-  {
-    width:33%;
-  }
-  .resources-btn {
-    margin: 16px 0;
-    font-size: 10px;
-    padding: 5px 15px 6px 8px;
+  .tags-wrapper-right {
+    width: 33%;
   }
   .resources-text-content ul {
     padding: 14px 0px 35px 17px;
@@ -772,14 +737,13 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .article-btn {
+  .article-btn, .tags-button, .resources-btn {
     margin: 17px 0;
     font-size: 13px;
     padding: 5px 15px 6px 8px;
   }
-  .article-section
-  {
-    margin-bottom:15px;
+  .article-section {
+    margin-bottom: 15px;
   }
   .article-img-content img {
     max-width: 220px;
@@ -790,6 +754,14 @@ footer {
   .article-text-content h2 {
     font-size: 15px;
     padding-bottom: 7px;
+  }
+  .article-text-content h6 {
+    padding-bottom: 14px;
+    font-size: 9px;
+  }
+  .article-text-content button {
+    font-size: 10px;
+    padding: 7px 22px;
   }
   .article-git-commands {
     padding-bottom: 5px;
@@ -804,30 +776,11 @@ footer {
   .article-calander {
     margin-left: 6px;
   }
-  .article-text-content h6 {
-    padding-bottom: 14px;
-    font-size: 9px;
-  }
-  .article-readmore-btn {
-    font-size: 10px;
-    padding: 7px 22px;
-  }
-  .tags-wrapper-right
-  {
-    width:33%;
-  }
-  .tags-btn {
-    margin: 17px 0;
-    font-size: 13px;
-    padding: 5px 15px 6px 8px;
+  .tags-wrapper-right {
+    width: 33%;
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
-  }
-  .resources-btn {
-    margin: 17px 0;
-    font-size: 13px;
-    padding: 5px 15px 6px 8px;
   }
   .resources-text-content ul {
     padding: 20px 0px 36px 19px;
@@ -838,7 +791,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .article-btn {
+  .article-btn, .tags-button, .resources-btn {
     margin: 18px 0;
     font-size: 15px;
     padding: 5px 16px 6px 9px;
@@ -851,6 +804,15 @@ footer {
   }
   .article-text-content h2 {
     font-size: 23px;
+  }
+  .article-text-content h6 {
+    padding-bottom: 18px;
+    font-size: 11px;
+  }
+  .article-text-content button {
+    font-size: 11px;
+    padding: 11px 26px;
+    margin-top: 0;
   }
   .article-git-commands {
     padding-bottom: 16px;
@@ -865,27 +827,11 @@ footer {
   .article-calander {
     margin-left: 12px;
   }
-  .article-text-content h6 {
-    padding-bottom: 18px;
-    font-size: 11px;
-  }
-  .article-readmore-btn {
-    font-size: 11px;
-    padding: 11px 26px;
-    margin-top: 0;
-  }
-  .tags-btn {
-    margin: 18px 0;
-    font-size: 15px;
-    padding: 5px 16px 6px 9px;
+  .tags-wrapper-right {
+    width: 33%;
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
-  }
-  .resources-btn {
-    margin: 18px 0;
-    font-size: 15px;
-    padding: 5px 16px 6px 9px;
   }
   .resources-text-content ul {
     padding: 32px 0 59px 23px;
@@ -896,7 +842,7 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .article-btn {
+  .article-btn, .tags-button, .resources-btn {
     margin: 20px 0;
     font-size: 18px;
     padding: 6px 18px 6px 10px;
@@ -912,6 +858,14 @@ footer {
     font-size: 24px;
     padding-bottom: 15px;
   }
+  .article-text-content h6 {
+    padding-bottom: 26px;
+    font-size: 12px;
+  }
+  .article-text-content button {
+    font-size: 12px;
+    padding: 13px 26px;
+  }
   .article-git-commands {
     padding-bottom: 20px;
   }
@@ -920,23 +874,6 @@ footer {
   }
   .article-calander {
     margin-left: 15px;
-  }
-  .article-text-content h6 {
-    padding-bottom: 26px;
-    font-size: 12px;
-  }
-  .article-readmore-btn {
-    font-size: 12px;
-    padding: 13px 26px;
-  }
-  .tags-wrapper-right
-  {
-    width:32%;
-  }
-  .tags-btn, .resources-btn {
-    margin: 20px 0;
-    font-size: 18px;
-    padding: 6px 18px 6px 10px;
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
