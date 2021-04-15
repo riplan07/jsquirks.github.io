@@ -53,55 +53,62 @@ $myFont: RobotoSlab;
 {
     padding:0 5%;
 }
-header
-{
-    position:relative;
-}
 .header-container
 {
     border-bottom:1px solid #f2d46a;
-}
-.header-logo
-{
-    display:flex;
-    justify-content:space-between;
-}
-.header-navbar
-{
-    align-self:center;
-}
-.dropdown-content
-{
-      display:none;
-      position:absolute;
-      right:5%;
-      z-index:1;
-      background-color: #fff;
-      padding: 40px 15px 20px;
-}
-.dropdown-content
-{
-    li
-    {
-        color:#333333;
-        font-family: $myFont;
-        font-size:16px;
-        padding-top:10px;    
+    &-logo{
+        display:flex;
+        justify-content:space-between; 
+        &-img img{
+            @media (min-width:320px){
+                max-width: 125px;
+            }
+            @media (min-width:576px){
+                max-width:155px;
+            }
+            @media (min-width:786px){
+                max-width:unset;
+            }
+        } 
+        &-navbar{
+            align-self:center;
+            img{
+                @media (min-width:320px){
+                    max-width: 27px;
+                }
+                @media (min-width:576px){
+                    max-width:37px;
+                }
+                @media (min-width:786px){
+                    max-width:unset;
+                }  
+            }
+        }
+        &-dropdown-content{
+            display:none;
+            position:absolute;
+            right:5%;
+            z-index:1;
+            background-color: #fff;
+            padding: 40px 15px 20px;
+            li{
+                color:#333333;
+                font-family: RobotoSlab;
+                font-size:16px;
+                padding-top:10px; 
+                a{
+                    color:green;
+                }
+            }
+        }
     }
-    li a
-    {
-        color:green;
-    }
-    li a:hover
-    {
-    background:#f2d46a;
-    }
-} 
-.dropdown:hover .dropdown-content 
-{
+}
+.dropdown-content li a:hover{
+     background:#f2d46a;
+ }
+.header-container-logo-dropdown:hover .header-container-logo-dropdown-content {
     display: block;
 }
-
 /* .........................section...................... */
 /* ...........................banner......................... */
 section
@@ -112,112 +119,202 @@ section
 {
     padding-top:20px;
 }
-.banner-section
-{
+.banner-section{
     display:flex;
     justify-content: space-between;
     margin-top:20px;
-}
-.banner-container
-{
-    position:relative;
-    width:68%;
-}
-.banner-img-content img
-{
-    width:99%;
-    height:auto;
-}
-.banner-text-content
-{
-    position:absolute;
-    padding:30px 0 60px 40px;
-    background: rgba(0, 0, 0, 0.44);
-    bottom: 1%;
-    left: 0;
-    right:0;
-}
-// .banner-text-content h2
-// {
-//     font-family: $myFont;
-//     font-size: 24px;
-//     color:#e5b400;
-//     padding-bottom:15px;
-// }
-.banner-text-content
-{
-    h2
-    {
-        font-family: $myFont;
-        font-size: 24px;
-        color:#e5b400;
-        padding-bottom:15px; 
+    @media (min-width:320px){
+      display:block;
     }
-    ul
-    {
-        display:flex;
+    @media (min-width:576px){
+      display:flex;
     }
-    ul li
-    {
-        @include important-text;
-        display:flex;
-        align-items: center;
-        color:white; 
+    &-wrapper{
+      position:relative;
+      width:68%;
+      @media (min-width:320px){
+        width:unset;
+      }
+      @media (min-width:1200px){
+        width:68%;
+      }
+      &-img img{
+        width:99%;
+        height:auto;
+        @media (min-width:320px){
+          width:100%;
+        }
+        @media (min-width:576px){
+          width:99%;
+        }
+      }
+      &-text{
+        position:absolute;
+        padding:30px 0 60px 40px;
+        background: rgba(0, 0, 0, 0.44);
+        bottom: 1%;
+        left: 0;
+        right:1%;
+        @media (min-width:320px){
+          // right: 7px;
+          padding: 13px 0 15px 13px;
+          bottom: 1%;
+          // right: 0; 
+        }
+        @media (min-width:576px){
+          padding: 25px 0 40px 30px;
+          bottom: 1%;
+          right: 4px;
+        }
+        @media (min-width:992px){
+          right:1%;
+        }
+        h2{
+            font-family: $myFont;
+            font-size: 24px;
+            color:#e5b400;
+            padding-bottom:15px; 
+            @media (min-width:320px){
+              font-size: 13px; 
+            }
+            @media (min-width:576px){
+              font-size: 12px; 
+            }
+            @media (min-width:768px){
+              font-size: 17px; 
+            }
+            @media (min-width:992px){
+              font-size: 22px;
+            }
+            @media (min-width:1200px){
+              font-size: 24px; 
+            }
+        }
+        &-git{
+            display:flex;
+            li{
+            @include important-text;
+            display:flex;
+            align-items: center;
+            color:white; 
+            @media (min-width:320px){
+              font-size: 7px;
+            }
+            @media (min-width:576px){
+              font-size: 6px;
+            }
+            @media (min-width:768px){
+              font-size:8px;
+            }
+            @media (min-width:992px){
+              font-size:12px;
+            }
+            img{
+            padding-right:10px; 
+            @media (min-width:320px){
+              padding-right: 4px;
+              width: 20%;
+            }
+            @media (min-width:576px){
+              padding-right: 6px;
+            }
+            @media (min-width:768px){
+              padding-right: 7px;
+              width: 21px;
+            }
+            @media (min-width:992px){
+              padding-right: 10px;
+              width: unset;
+            }
+            }
+            &-calander{
+              margin-left:15px;
+              @media (min-width:320px){
+                  margin-left: 3px;
+              }
+              @media (min-width:576px){
+                margin-left: 5px;
+              }
+              @media (min-width:768px){
+                margin-left: 10px;
+              }
+              @media (min-width:768px){
+                margin-left: 15px;
+              }
+            }   
+          }
+        }
+      }
+    }  
+    &-item{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width:32%;
+      @media (min-width:320px){
+        width:unset;
+      }
+      @media (min-width:1200px){
+        width:32%;
+      }
+      &-img{
+        position:relative;
+        &-text{
+          position:absolute;
+          background: rgba(0, 0, 0, 0.44);
+          padding: 20px 139px 30px 10px;
+          bottom:4px;
+          left:0;
+          right:0;
+          @media (min-width:320px){
+            padding: 20px 139px 30px 10px;
+          }
+          @media (min-width:576px){
+            padding: 20px 0px 30px 10px;
+          }
+          @media (min-width:992px){
+            padding: 20px 63px 30px 10px;
+          }
+          @media (min-width:1200px){
+            padding: 20px 91px 30px 10px;
+          }
+          h2{
+            font-family: $myFont;
+            font-size: 24px;
+            color:#e5b400;
+            @media (min-width:320px){
+              font-size: 13px;
+            }
+            @media (min-width:576px){
+              font-size: 12px;
+            }
+            @media (min-width:768px){
+              font-size: 17px;
+            }
+            @media (min-width:992px){
+              font-size: 22px;
+            }
+            @media (min-width:1200px){
+              font-size:24px;
+            }
+          }
+        }
+      }
+      &-selector{
+        position:relative;
+      }
+    }  
+}  
+    .banner-section-item-img img, .banner-section-item-selector img{
+      width:100%;
     }
-    ul li img
-    {
-        padding-right:10px;   
+    .banner-essential-text {
+      padding: 20px 0px 30px 10px;
     }
-}
-// .banner-git-commands
-// {
-//     display:flex;
-// }
-// .banner-icon
-// {
-//     padding-right:10px;
-// }
-// .banner-git-commands li
-// {
-//     @include important-text;
-//     display:flex;
-//     align-items: center;
-//     color:white;
-// }
-.banner-calander
-{
-    margin-left:15px;
-}
-.banner-container-2
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width:33%;
-}
-.banner-essential-img
-{
-    position:relative;
-}
-.banner-essential-text
-{
-    position:absolute;
-    background: rgba(0, 0, 0, 0.44);
-    padding: 20px 139px 30px 10px;
-    bottom:4px;
-    left:0;
-    right:0;
-}
-.banner-essential-text h2
-{
-    font-family: $myFont;
-    font-size: 24px;
-    color:#e5b400;
-}
-.banner-selector-img
-{
-    position:relative;
-}
+    .banner-essential-text h2 {
+      font-size: 12px;
+    }
+
 
 /* ..................................main section........................ */
 /* ..............................article-section........................ */
@@ -261,36 +358,29 @@ section
     background: #ffffff;
     padding:20px 30px;
     margin-bottom: 4px;
-}
-.article-text-content h2
-{
-    font-family: $myFont;
-    font-size: 24px;
-    color:#e5b400;
-    padding-bottom:15px;
-}
-.article-git-commands
-{
-    display:flex;
-    padding-bottom:20px;
-}
-.article-icon
-{
-    padding-right:10px;
-}
-.article-git-commands li
-{
-    @include important-text;
-    display:flex;
-    align-items: center;
-    color:#777777;
-}
-.article-calander
-{
-    margin-left:15px;
-}
-.article-text-content 
-{
+    h2
+    {
+      font-family: $myFont;
+      font-size: 24px;
+      color:#e5b400;
+      padding-bottom:15px;
+    } 
+    ul
+    {
+      display:flex;
+      padding-bottom:20px;
+    li
+    {
+      @include important-text;
+      display:flex;
+      align-items: center;
+      color:#777777;
+      img
+      {
+        padding-right:10px;
+      }
+    }
+    }
     p
     {
         @include important-text;
@@ -313,11 +403,15 @@ section
         padding:13px 26px;
         outline:none; 
         border-radius: 2px;
+        a
+        {
+          color:#333333; 
+        }
     }
 }
-.article-readmore-btn a
+.article-calander
 {
-    color:#333333; 
+    margin-left:15px;
 }
 .article-readmore-btn:hover
 {
@@ -466,177 +560,7 @@ footer
     {
         max-width:unset;
     }
-}
-/* ..........................banner-section................ */
-
-/* ......................media query.................... */
-@media (min-width: 320px) {
-    .banner-section
-   {
-     display:block;
-   }
-   .banner-container
-   {
-     width:unset;
-   }
-   .banner-img-content img {
-     width: 100%;
-   }
-   .banner-text-content {
-     right: 7px;
-     padding: 13px 0 15px 13px;
-     bottom: 1%;
-     right: 0;
-   }
-   .banner-text-content
-    {
-        h2
-        {
-            font-size: 8px;
-            font-size: 13px; 
-        }
-        ul li
-        {
-            font-size: 7px;
-        }
-        ul li img
-        {
-            padding-right: 4px;
-            width: 20%;  
-        }
-    }
-   .banner-calander {
-     margin-left: 3px;
-   }
-   .banner-essential-text {
-     padding: 20px 139px 30px 10px;
-   }
-   .banner-essential-text h2 {
-     font-size: 13px;
-   }
-   .banner-container-2 
-   {
-     width:unset;
-   }
-   .banner-essential-img img, .banner-selector-img img
-   {
-     width:100%;
-   }
- }
- 
- @media (min-width: 576px) {
-   .banner-section
-   {
-     display:flex;
-   }
-   .banner-img-content {
-     width: 99%;
-   }
-   .banner-text-content {
-     padding: 25px 0 40px 30px;
-     bottom: 1%;
-     right: 4px;
-   }
-   .banner-text-content
-    {
-        h2
-        {
-            font-size: 12px;
-        }
-        ul li
-        {
-            font-size: 6px;
-        }
-        ul li img
-        {
-            padding-right: 6px;
-        }
-    }
-   .banner-calander {
-     margin-left: 5px;
-   }
-   .banner-essential-text {
-     padding: 20px 0px 30px 10px;
-   }
-   .banner-essential-text h2 {
-     font-size: 12px;
-   }
- }
- 
- @media (min-width: 768px) {
-   .banner-text-content
-    {
-        h2
-        {
-            font-size: 17px;
-        }
-        ul li
-        {
-            font-size: 8px;
-        }
-        ul li img
-        {
-            padding-right: 7px;
-            width: 21px;
-        }
-    }
-   .banner-calander {
-     margin-left: 10px;
-   }
-   .banner-essential-text h2 {
-     font-size: 17px;
-   }
- }
- 
- @media (min-width: 992px) {
-   .banner-img-content {
-     width: 99%;
-   }
-   .banner-img-content img, .banner-essential-img img, .banner-selector-img img {
-     width: 100%;
-     height: auto;
-   }
-   .banner-text-content {
-     right: 7px;
-   }
-   .banner-text-content
-   {
-       h2
-       {
-           font-size: 24px;
-       }
-       ul li
-       {
-           font-size: 12px;
-       }
-       ul li img
-       {
-           padding-right: 10px;
-           width: unset;
-       }
-   }
-   .banner-calander {
-     margin-left: 15px;
-   }
-   .banner-essential-text {
-     padding: 20px 139px 30px 10px;
-   }
-   .banner-essential-text h2 {
-     font-size: 22px;
-   }
- }
- 
- @media (min-width: 1200px)
-  {
-    .banner-container
-    {
-      width:68%;
-    }
-   .banner-essential-text h2 {
-     font-size: 24px;
-   }
- }
- 
+} 
  /* ......................media query.................... */
  /* ..........................main-section................... */
  @media (min-width: 320px) {
@@ -660,40 +584,41 @@ footer
    .article-img-content img {
      max-width: 135px;
    }
-   .article-text-content {
-     padding: 5px 12px;
-     width: 69%;
-   }
-   .article-git-commands {
-     padding-bottom: 2px;
-   }
-   .article-git-commands li {
-     font-size: 6px;
-   }
-   .article-icon {
-     padding-right: 1px;
-     width: 13%;
-   }
+   .article-text-content 
+    {
+    padding: 5px 12px;
+    width: 69%;
+    h2
+    {
+      font-size: 11px;
+      padding-bottom: 6px;
+    } 
+    ul
+    {
+      padding-bottom: 2px;
+      li
+      {
+      font-size:6px;
+      img
+      {
+        padding-right: 1px;
+        width: 13%;
+      }
+    }
+    }
+    h6
+    {
+      padding-bottom: 2px;
+      font-size: 7px;
+    }
+    button
+    {
+      font-size: 7px;
+      padding: 3px 6px;
+    }
+    }
    .article-calander {
-     margin-left: 4px;
-   }
-   .article-text-content
-   {
-       h2
-       {
-        font-size: 11px;
-        padding-bottom: 6px;
-       }
-       h6
-       {
-        padding-bottom: 9px;
-        font-size: 6px;
-       }
-       button
-       {
-        font-size: 10px;
-        padding: 3px 6px;
-       }
+     margin-left: 2px;
    }
    .tags-wrapper-right {
      width:unset;
@@ -715,7 +640,6 @@ footer
    .main-container
    {
      display:flex;
-     padding-bottom: unset;
    }
    .article-btn, .tags-btn, .resources-btn {
      margin: 16px 0;
@@ -736,11 +660,26 @@ footer
    }
    .article-text-content
    {
+      padding: 7px 17px;
+      width: unset;
        h2
        {
         font-size: 13px;
         padding-bottom: 5px;
        }
+       ul
+       {
+          padding-bottom: 7px;
+          li
+          {
+            font-size: 8px;
+          }
+          img
+          {
+            padding-right: 3px;
+            width: 18%;
+          }
+        }
        h6
        {
         padding-bottom: 9px;
@@ -751,16 +690,7 @@ footer
         font-size: 7px;
         padding: 4px 11px;
        }
-   }
-   .article-git-commands {
-     padding-bottom: 7px;
-   }
-   .article-git-commands li {
-     font-size: 8px;
-   }
-   .article-icon {
-     padding-right: 3px;
-     width: 18%;
+
    }
    .article-calander {
      margin-left: 4px;
@@ -781,9 +711,8 @@ footer
      padding: 4px;
    }
  }
- 
  @media (min-width: 768px) {
-   .article-btn, .tags-button, .resources-btn{
+   .article-btn, .tags-btn, .resources-btn{
      margin: 17px 0;
      font-size: 13px;
      padding: 5px 15px 6px 8px;
@@ -800,31 +729,35 @@ footer
    }
    .article-text-content
    {
+       padding: 8px 25px; 
        h2
        {
         font-size: 15px;
         padding-bottom: 7px;
        }
+       ul
+       {
+        padding-bottom: 5px; 
+        li
+        {
+          font-size: 9px; 
+        }
+        img
+        {
+          padding-right: 7px;
+          width: 20%;
+        }
+       }
        h6
        {
         padding-bottom: 14px;
-        font-size: 9px;
+        font-size: 11px;
        }
        button
        {
         font-size: 10px;
         padding: 7px 22px;
        }
-   }
-   .article-git-commands {
-     padding-bottom: 5px;
-   }
-   .article-git-commands li {
-     font-size: 8px;
-   }
-   .article-icon {
-     padding-right: 7px;
-     width: 20%;
    }
    .article-calander {
      margin-left: 6px;
@@ -845,7 +778,7 @@ footer
  }
  
  @media (min-width: 992px) {
-   .article-btn, .tags-button, .resources-btn {
+   .article-btn, .tags-btn, .resources-btn {
      margin: 18px 0;
      font-size: 15px;
      padding: 5px 16px 6px 9px;
@@ -858,31 +791,35 @@ footer
    }
    .article-text-content
    {
-       h2
-       {
+      padding: 12px 30px; 
+      h2
+      {
         font-size: 23px;
-       }
-       h6
-       {
+      }
+      ul
+      {
+        padding-bottom: 16px;
+        li
+        {
+          font-size: 10px;  
+        } 
+        img
+        {
+          padding-right: 10px;
+          width: unset; 
+        }
+      }
+      h6
+      {
         padding-bottom: 18px;
         font-size: 11px;
-       }
-       button
-       {
+      }
+      button
+      {
         font-size: 11px;
         padding: 11px 26px;
         margin-top: 0;
-       }
-   }
-   .article-git-commands {
-     padding-bottom: 16px;
-   }
-   .article-git-commands li {
-     font-size: 10px;
-   }
-   .article-icon {
-     padding-right: 10px;
-     width: unset;
+      }
    }
    .article-calander {
      margin-left: 12px;
@@ -903,29 +840,35 @@ footer
  }
  
  @media (min-width: 1200px) {
-   .article-btn, .tags-button, .resources-btn {
+   .article-btn, .tags-btn, .resources-btn {
      margin: 20px 0;
      font-size: 18px;
      padding: 6px 18px 6px 10px;
    }
    .article-img-content img {
-     max-width: 320px;
+     max-width: 340px;
      height: auto;
-   }
-   .article-text-content {
-     padding: 16px 30px;
    }
    .article-text-content
    {
-       h2
-       {
+      padding: 16px 30px;
+      h2
+      {
         font-size: 24px;
         padding-bottom: 15px;
-       }
+      }
+      ul
+      {
+        padding-bottom: 20px;
+        li
+        {
+          font-size: 12px; 
+        }
+      }
        h6
        {
         padding-bottom: 26px;
-        font-size: 12px;
+        font-size: 14px;
        }
        button
        {
@@ -933,14 +876,12 @@ footer
         padding: 13px 26px;
        }
    }
-   .article-git-commands {
-     padding-bottom: 20px;
-   }
-   .article-git-commands li {
-     font-size: 12px;
-   }
    .article-calander {
      margin-left: 15px;
+   }
+   .tags-wrapper-right
+   {
+     width:32%;
    }
    .tags-rectangle-img {
      padding: 31px 33px 34px 27px;

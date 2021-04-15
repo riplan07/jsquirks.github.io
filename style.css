@@ -54,15 +54,11 @@ table {
   padding: 0 5%;
 }
 
-header {
-  position: relative;
-}
-
 .header-container {
   border-bottom: 1px solid #f2d46a;
 }
 
-.header-logo {
+.header-container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,13 +67,49 @@ header {
           justify-content: space-between;
 }
 
-.header-navbar {
+@media (min-width: 320px) {
+  .header-container-logo-img img {
+    max-width: 125px;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-container-logo-img img {
+    max-width: 155px;
+  }
+}
+
+@media (min-width: 786px) {
+  .header-container-logo-img img {
+    max-width: unset;
+  }
+}
+
+.header-container-logo-navbar {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-.dropdown-content {
+@media (min-width: 320px) {
+  .header-container-logo-navbar img {
+    max-width: 27px;
+  }
+}
+
+@media (min-width: 576px) {
+  .header-container-logo-navbar img {
+    max-width: 37px;
+  }
+}
+
+@media (min-width: 786px) {
+  .header-container-logo-navbar img {
+    max-width: unset;
+  }
+}
+
+.header-container-logo-dropdown-content {
   display: none;
   position: absolute;
   right: 5%;
@@ -86,14 +118,14 @@ header {
   padding: 40px 15px 20px;
 }
 
-.dropdown-content li {
+.header-container-logo-dropdown-content li {
   color: #333333;
   font-family: RobotoSlab;
   font-size: 16px;
   padding-top: 10px;
 }
 
-.dropdown-content li a {
+.header-container-logo-dropdown-content li a {
   color: green;
 }
 
@@ -101,7 +133,7 @@ header {
   background: #f2d46a;
 }
 
-.dropdown:hover .dropdown-content {
+.header-container-logo-dropdown:hover .header-container-logo-dropdown-content {
   display: block;
 }
 
@@ -125,39 +157,128 @@ section {
   margin-top: 20px;
 }
 
-.banner-container {
+@media (min-width: 320px) {
+  .banner-section {
+    display: block;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.banner-section-wrapper {
   position: relative;
   width: 68%;
 }
 
-.banner-img-content img {
+@media (min-width: 320px) {
+  .banner-section-wrapper {
+    width: unset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section-wrapper {
+    width: 68%;
+  }
+}
+
+.banner-section-wrapper-img img {
   width: 99%;
   height: auto;
 }
 
-.banner-text-content {
+@media (min-width: 320px) {
+  .banner-section-wrapper-img img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-img img {
+    width: 99%;
+  }
+}
+
+.banner-section-wrapper-text {
   position: absolute;
   padding: 30px 0 60px 40px;
   background: rgba(0, 0, 0, 0.44);
   bottom: 1%;
   left: 0;
-  right: 0;
+  right: 1%;
 }
 
-.banner-text-content h2 {
+@media (min-width: 320px) {
+  .banner-section-wrapper-text {
+    padding: 13px 0 15px 13px;
+    bottom: 1%;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-text {
+    padding: 25px 0 40px 30px;
+    bottom: 1%;
+    right: 4px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-wrapper-text {
+    right: 1%;
+  }
+}
+
+.banner-section-wrapper-text h2 {
   font-family: RobotoSlab;
   font-size: 24px;
   color: #e5b400;
   padding-bottom: 15px;
 }
 
-.banner-text-content ul {
+@media (min-width: 320px) {
+  .banner-section-wrapper-text h2 {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-text h2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-wrapper-text h2 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-wrapper-text h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section-wrapper-text h2 {
+    font-size: 24px;
+  }
+}
+
+.banner-section-wrapper-text-git {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner-text-content ul li {
+.banner-section-wrapper-text-git li {
   font-family: Inter;
   font-size: 12px;
   display: -webkit-box;
@@ -169,15 +290,90 @@ section {
   color: white;
 }
 
-.banner-text-content ul li img {
+@media (min-width: 320px) {
+  .banner-section-wrapper-text-git li {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-text-git li {
+    font-size: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-wrapper-text-git li {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-wrapper-text-git li {
+    font-size: 12px;
+  }
+}
+
+.banner-section-wrapper-text-git li img {
   padding-right: 10px;
 }
 
-.banner-calander {
+@media (min-width: 320px) {
+  .banner-section-wrapper-text-git li img {
+    padding-right: 4px;
+    width: 20%;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-text-git li img {
+    padding-right: 6px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-wrapper-text-git li img {
+    padding-right: 7px;
+    width: 21px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-wrapper-text-git li img {
+    padding-right: 10px;
+    width: unset;
+  }
+}
+
+.banner-section-wrapper-text-git li-calander {
   margin-left: 15px;
 }
 
-.banner-container-2 {
+@media (min-width: 320px) {
+  .banner-section-wrapper-text-git li-calander {
+    margin-left: 3px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-wrapper-text-git li-calander {
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-wrapper-text-git li-calander {
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-wrapper-text-git li-calander {
+    margin-left: 15px;
+  }
+}
+
+.banner-section-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,14 +384,26 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 33%;
+  width: 32%;
 }
 
-.banner-essential-img {
+@media (min-width: 320px) {
+  .banner-section-item {
+    width: unset;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section-item {
+    width: 32%;
+  }
+}
+
+.banner-section-item-img {
   position: relative;
 }
 
-.banner-essential-text {
+.banner-section-item-img-text {
   position: absolute;
   background: rgba(0, 0, 0, 0.44);
   padding: 20px 139px 30px 10px;
@@ -204,14 +412,80 @@ section {
   right: 0;
 }
 
-.banner-essential-text h2 {
+@media (min-width: 320px) {
+  .banner-section-item-img-text {
+    padding: 20px 139px 30px 10px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-item-img-text {
+    padding: 20px 0px 30px 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-item-img-text {
+    padding: 20px 63px 30px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section-item-img-text {
+    padding: 20px 91px 30px 10px;
+  }
+}
+
+.banner-section-item-img-text h2 {
   font-family: RobotoSlab;
   font-size: 24px;
   color: #e5b400;
 }
 
-.banner-selector-img {
+@media (min-width: 320px) {
+  .banner-section-item-img-text h2 {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-section-item-img-text h2 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner-section-item-img-text h2 {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner-section-item-img-text h2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-section-item-img-text h2 {
+    font-size: 24px;
+  }
+}
+
+.banner-section-item-selector {
   position: relative;
+}
+
+.banner-section-item-img img, .banner-section-item-selector img {
+  width: 100%;
+}
+
+.banner-essential-text {
+  padding: 20px 0px 30px 10px;
+}
+
+.banner-essential-text h2 {
+  font-size: 12px;
 }
 
 /* ..................................main section........................ */
@@ -265,18 +539,14 @@ section {
   padding-bottom: 15px;
 }
 
-.article-git-commands {
+.article-text-content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
 }
 
-.article-icon {
-  padding-right: 10px;
-}
-
-.article-git-commands li {
+.article-text-content ul li {
   font-family: Inter;
   font-size: 12px;
   display: -webkit-box;
@@ -288,8 +558,8 @@ section {
   color: #777777;
 }
 
-.article-calander {
-  margin-left: 15px;
+.article-text-content ul li img {
+  padding-right: 10px;
 }
 
 .article-text-content p {
@@ -318,8 +588,12 @@ section {
   border-radius: 2px;
 }
 
-.article-readmore-btn a {
+.article-text-content button a {
   color: #333333;
+}
+
+.article-calander {
+  margin-left: 15px;
 }
 
 .article-readmore-btn:hover {
@@ -465,146 +739,6 @@ footer {
   }
 }
 
-/* ..........................banner-section................ */
-/* ......................media query.................... */
-@media (min-width: 320px) {
-  .banner-section {
-    display: block;
-  }
-  .banner-container {
-    width: unset;
-  }
-  .banner-img-content img {
-    width: 100%;
-  }
-  .banner-text-content {
-    right: 7px;
-    padding: 13px 0 15px 13px;
-    bottom: 1%;
-    right: 0;
-  }
-  .banner-text-content h2 {
-    font-size: 8px;
-    font-size: 13px;
-  }
-  .banner-text-content ul li {
-    font-size: 7px;
-  }
-  .banner-text-content ul li img {
-    padding-right: 4px;
-    width: 20%;
-  }
-  .banner-calander {
-    margin-left: 3px;
-  }
-  .banner-essential-text {
-    padding: 20px 139px 30px 10px;
-  }
-  .banner-essential-text h2 {
-    font-size: 13px;
-  }
-  .banner-container-2 {
-    width: unset;
-  }
-  .banner-essential-img img, .banner-selector-img img {
-    width: 100%;
-  }
-}
-
-@media (min-width: 576px) {
-  .banner-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .banner-img-content {
-    width: 99%;
-  }
-  .banner-text-content {
-    padding: 25px 0 40px 30px;
-    bottom: 1%;
-    right: 4px;
-  }
-  .banner-text-content h2 {
-    font-size: 12px;
-  }
-  .banner-text-content ul li {
-    font-size: 6px;
-  }
-  .banner-text-content ul li img {
-    padding-right: 6px;
-  }
-  .banner-calander {
-    margin-left: 5px;
-  }
-  .banner-essential-text {
-    padding: 20px 0px 30px 10px;
-  }
-  .banner-essential-text h2 {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  .banner-text-content h2 {
-    font-size: 17px;
-  }
-  .banner-text-content ul li {
-    font-size: 8px;
-  }
-  .banner-text-content ul li img {
-    padding-right: 7px;
-    width: 21px;
-  }
-  .banner-calander {
-    margin-left: 10px;
-  }
-  .banner-essential-text h2 {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 992px) {
-  .banner-img-content {
-    width: 99%;
-  }
-  .banner-img-content img, .banner-essential-img img, .banner-selector-img img {
-    width: 100%;
-    height: auto;
-  }
-  .banner-text-content {
-    right: 7px;
-  }
-  .banner-text-content h2 {
-    font-size: 24px;
-  }
-  .banner-text-content ul li {
-    font-size: 12px;
-  }
-  .banner-text-content ul li img {
-    padding-right: 10px;
-    width: unset;
-  }
-  .banner-calander {
-    margin-left: 15px;
-  }
-  .banner-essential-text {
-    padding: 20px 139px 30px 10px;
-  }
-  .banner-essential-text h2 {
-    font-size: 22px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .banner-container {
-    width: 68%;
-  }
-  .banner-essential-text h2 {
-    font-size: 24px;
-  }
-}
-
 /* ......................media query.................... */
 /* ..........................main-section................... */
 @media (min-width: 320px) {
@@ -631,30 +765,30 @@ footer {
     padding: 5px 12px;
     width: 69%;
   }
-  .article-git-commands {
-    padding-bottom: 2px;
-  }
-  .article-git-commands li {
-    font-size: 6px;
-  }
-  .article-icon {
-    padding-right: 1px;
-    width: 13%;
-  }
-  .article-calander {
-    margin-left: 4px;
-  }
   .article-text-content h2 {
     font-size: 11px;
     padding-bottom: 6px;
   }
-  .article-text-content h6 {
-    padding-bottom: 9px;
+  .article-text-content ul {
+    padding-bottom: 2px;
+  }
+  .article-text-content ul li {
     font-size: 6px;
   }
+  .article-text-content ul li img {
+    padding-right: 1px;
+    width: 13%;
+  }
+  .article-text-content h6 {
+    padding-bottom: 2px;
+    font-size: 7px;
+  }
   .article-text-content button {
-    font-size: 10px;
+    font-size: 7px;
     padding: 3px 6px;
+  }
+  .article-calander {
+    margin-left: 2px;
   }
   .tags-wrapper-right {
     width: unset;
@@ -677,7 +811,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: unset;
   }
   .article-btn, .tags-btn, .resources-btn {
     margin: 16px 0;
@@ -695,9 +828,23 @@ footer {
     padding: 7px 17px;
     width: unset;
   }
+  .article-text-content {
+    padding: 7px 17px;
+    width: unset;
+  }
   .article-text-content h2 {
     font-size: 13px;
     padding-bottom: 5px;
+  }
+  .article-text-content ul {
+    padding-bottom: 7px;
+  }
+  .article-text-content ul li {
+    font-size: 8px;
+  }
+  .article-text-content ul img {
+    padding-right: 3px;
+    width: 18%;
   }
   .article-text-content h6 {
     padding-bottom: 9px;
@@ -706,16 +853,6 @@ footer {
   .article-text-content button {
     font-size: 7px;
     padding: 4px 11px;
-  }
-  .article-git-commands {
-    padding-bottom: 7px;
-  }
-  .article-git-commands li {
-    font-size: 8px;
-  }
-  .article-icon {
-    padding-right: 3px;
-    width: 18%;
   }
   .article-calander {
     margin-left: 4px;
@@ -737,7 +874,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .article-btn, .tags-button, .resources-btn {
+  .article-btn, .tags-btn, .resources-btn {
     margin: 17px 0;
     font-size: 13px;
     padding: 5px 15px 6px 8px;
@@ -751,27 +888,30 @@ footer {
   .article-text-content {
     padding: 8px 25px;
   }
+  .article-text-content {
+    padding: 8px 25px;
+  }
   .article-text-content h2 {
     font-size: 15px;
     padding-bottom: 7px;
   }
+  .article-text-content ul {
+    padding-bottom: 5px;
+  }
+  .article-text-content ul li {
+    font-size: 9px;
+  }
+  .article-text-content ul img {
+    padding-right: 7px;
+    width: 20%;
+  }
   .article-text-content h6 {
     padding-bottom: 14px;
-    font-size: 9px;
+    font-size: 11px;
   }
   .article-text-content button {
     font-size: 10px;
     padding: 7px 22px;
-  }
-  .article-git-commands {
-    padding-bottom: 5px;
-  }
-  .article-git-commands li {
-    font-size: 8px;
-  }
-  .article-icon {
-    padding-right: 7px;
-    width: 20%;
   }
   .article-calander {
     margin-left: 6px;
@@ -791,7 +931,7 @@ footer {
 }
 
 @media (min-width: 992px) {
-  .article-btn, .tags-button, .resources-btn {
+  .article-btn, .tags-btn, .resources-btn {
     margin: 18px 0;
     font-size: 15px;
     padding: 5px 16px 6px 9px;
@@ -802,8 +942,21 @@ footer {
   .article-text-content {
     padding: 12px 30px;
   }
+  .article-text-content {
+    padding: 12px 30px;
+  }
   .article-text-content h2 {
     font-size: 23px;
+  }
+  .article-text-content ul {
+    padding-bottom: 16px;
+  }
+  .article-text-content ul li {
+    font-size: 10px;
+  }
+  .article-text-content ul img {
+    padding-right: 10px;
+    width: unset;
   }
   .article-text-content h6 {
     padding-bottom: 18px;
@@ -813,16 +966,6 @@ footer {
     font-size: 11px;
     padding: 11px 26px;
     margin-top: 0;
-  }
-  .article-git-commands {
-    padding-bottom: 16px;
-  }
-  .article-git-commands li {
-    font-size: 10px;
-  }
-  .article-icon {
-    padding-right: 10px;
-    width: unset;
   }
   .article-calander {
     margin-left: 12px;
@@ -842,13 +985,13 @@ footer {
 }
 
 @media (min-width: 1200px) {
-  .article-btn, .tags-button, .resources-btn {
+  .article-btn, .tags-btn, .resources-btn {
     margin: 20px 0;
     font-size: 18px;
     padding: 6px 18px 6px 10px;
   }
   .article-img-content img {
-    max-width: 320px;
+    max-width: 340px;
     height: auto;
   }
   .article-text-content {
@@ -858,22 +1001,25 @@ footer {
     font-size: 24px;
     padding-bottom: 15px;
   }
+  .article-text-content ul {
+    padding-bottom: 20px;
+  }
+  .article-text-content ul li {
+    font-size: 12px;
+  }
   .article-text-content h6 {
     padding-bottom: 26px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .article-text-content button {
     font-size: 12px;
     padding: 13px 26px;
   }
-  .article-git-commands {
-    padding-bottom: 20px;
-  }
-  .article-git-commands li {
-    font-size: 12px;
-  }
   .article-calander {
     margin-left: 15px;
+  }
+  .tags-wrapper-right {
+    width: 32%;
   }
   .tags-rectangle-img {
     padding: 31px 33px 34px 27px;
